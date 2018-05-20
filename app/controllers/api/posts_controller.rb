@@ -1,6 +1,6 @@
 class Api::PostsController < ApplicationController
   def index
-  
+  @posts = City.find(params)
 
   end
 
