@@ -9,13 +9,6 @@ class Api::CitiesController < ApplicationController
     @city = City.find(params[:id])
     render json: @city
   end
-
-  def delete
-  end
-
-  def update
-  end
-
-  def create
-  end
 end
+
+
