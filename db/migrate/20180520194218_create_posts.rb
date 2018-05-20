@@ -5,7 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :description
       t.string :post_photo_url
       t.string :posted_user_name
-      t.refrences :city
+      t.references :city
       t.string :timestamp
 
       t.timestamps
