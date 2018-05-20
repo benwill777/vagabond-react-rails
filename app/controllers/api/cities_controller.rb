@@ -6,6 +6,8 @@ class Api::CitiesController < ApplicationController
   end
 
   def show
+    @city = City.find(params[:id])
+    render json: @city
   end
 
   def delete
